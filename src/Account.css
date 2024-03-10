@@ -1,0 +1,11 @@
+.account{
+    width: 100%;
+    height: 100vh;
+}
+.dataCont{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-color:transparent;
+    position: absolute;
+    top: 100px;
+}

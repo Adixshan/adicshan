@@ -1,0 +1,350 @@
+
+.verticalBar{
+    position: fixed;
+    top: 0;
+    width: 60px;
+    height: 100vh;
+    background-color: black;
+  }
+  .logo{
+    width: 40px;
+    height: auto;
+    border-radius: 30px;
+    margin-top: 10px;
+    position: absolute;
+    left: 10px;
+  }
+  .title{
+  position: absolute;
+  top: -10px;
+  left: 70px;
+  font-weight: bold;
+  font-size: 25px;
+  }
+  .login{
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 45px;
+    top: 30px;
+    cursor: pointer;
+    display: none;
+  
+  }
+  .signIn{
+    background: transparent;
+    border: none;
+    position: absolute;
+    top: 30px;
+    right: 5px;
+    cursor: pointer;
+    display: none;
+
+
+  }
+  #verticalLine{
+    width: 99vw;
+    height: calc(100vh - 120px);
+    position: absolute;
+    left: 5px;
+    top: 10%;
+    background-color:transparent;
+    overflow: scroll;
+  }
+  #calorieLine{
+    background-color: rgb(222, 16, 16);
+    width: 10px;
+   border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 40px;
+  }
+  .endDot{
+   
+    font-size: 20px;
+    color: white;
+      
+       position: absolute;
+
+       left: 20px;
+     }
+  .startDot{
+   
+ font-size: 20px;
+ color: white;
+   
+    position: absolute;
+    top: 15px;
+    left: 20px;
+  }
+  .startButton{
+    position: absolute;
+    left:45%;
+    width: 90px;
+    height: 40px;
+    background-color: rgb(1, 1, 1);
+    color: white;
+    border: none;
+    border-radius: 5px;
+   font-size: 20px;
+  }
+  .footer{
+    width: 100vw;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+  }
+  .addButton{
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10%;
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  #exerCont{
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    display: none;
+  }
+  .leftArrowExer{
+    position: fixed;
+    left: 5px;
+    font-size: 25px;
+    margin-left: 0px;
+    color: white;
+  }
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    top: 0;
+ 
+    overflow: scroll;
+    animation: slide-up 0.5s ease-out;
+  } 
+  @keyframes slide-up{
+    0%{
+      transform:  translateY(100%);
+      opacity: 0;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .item{
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin:14px;
+    background-color:rgb(222, 215, 215);
+    text-align: center;
+  overflow: hidden;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid white;
+  }
+  @media (min-width:768px){
+    .item{
+      width: 20%;
+    }
+  }
+  .item .exerImg{
+    width: 120%;
+    height: auto;
+    
+  }
+  .item:hover{
+    transform: scale(1.1);
+  }
+  #exerData{
+    width: 100%;
+    height: 100vh;
+    background-color:white;
+    display: none;
+    position: relative;
+    animation: slide-left 0.3s ease-out;
+    justify-content: center;
+  }
+  @keyframes slide-left{
+    0%{
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100%{
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+  #selExer{
+    width: 340px;
+    height: 200px;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 25px;
+    font-weight: bold;
+    color:white;
+    overflow: hidden;
+    border: 2px solid black;
+    border-radius: 20px;
+  }
+  .selExerimg{
+    width: 100%;
+    position: absolute;
+  top: -20%;
+  }
+  .timer{
+    position: absolute;
+    top: calc(5% + 210px);
+left: 50%;
+transform: translate(-50%);
+font-size: 30px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: bold;
+color:black;
+  }
+  #min{
+    font-size: 130px;
+  }
+  #sec{
+    font-size: 70px;
+  }
+  #start{
+    position: relative;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    height: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(2, 209, 23);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+  }
+  #stop{
+    position: relative;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100px;
+    height: auto;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: rgb(198, 39, 251);
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+display: none;
+  }
+  #timerGif{
+   width: 20px;
+   display: none;
+   position: absolute;
+   top:calc(5% + 220px);
+   left: 32%;
+  }
+
+.calorieBurn{
+  width: 300px;
+  height: 60px;
+  position: relative;
+  top: calc(5% + 300px);
+  left: 50%;
+  transform: translate(-50%);
+  text-align: start;
+  background-color: azure;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 0px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+
+}
+.fire{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 5px;
+}
+
+  #add{
+    width: 300px;
+    height: auto;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 20px;
+    padding: 20px;
+    background-color:black;
+    color: white;
+    cursor: pointer;
+    border: 1px solid white;
+  } 
+
+  .exerDataCont{
+    width: 280px;
+    height:70px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    position: relative;
+    top: 50px;
+    left: 60px;
+    margin-top: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  
+  }
+  .exerDataCont  .selExerImg{
+    width: 30%;
+ height: 90%;
+ padding: 3px;
+ border-radius: 15px;
+  }
+  .exerDataCont .selExerName{
+    position:absolute;
+    top: 20px;
+    left: 35%;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .exerDataCont .selExerTime{
+    position: absolute;
+    bottom: 3%;
+    right: 10px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .exerDataCont .selExerCal{
+      position: absolute;
+    left: 150px;
+      bottom: 3%;
+      font-weight: bold;
+  }
+  .exerDataCont .selExerFire{
+    position: absolute;
+    left: 130px;
+      bottom: 3%;
+      width: 25px;
+  }
+  
+  
